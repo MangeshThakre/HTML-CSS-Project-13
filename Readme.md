@@ -3,7 +3,7 @@
 # SASS Landing Page
 > HTML - CSS Project-13
 
-🙌 hey There I'm mangesh Thakre Wed Developer 
+🙌 hey There I'm mangesh Thakre Web Developer 
 ##  What I've learnd form this project 
  
  - Learned to Creat svg pattern for section 2
