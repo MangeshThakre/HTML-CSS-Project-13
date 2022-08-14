@@ -139,6 +139,7 @@ nav {
   display: flex;
   justify-content: space-evenly;
   margin: 8rem 0;
+  flex-wrap: wrap;
 }
 
 .section-three-img {
@@ -285,4 +286,172 @@ nav {
   background-color: #7030cc;
   color: white;
   border-radius: 28px;
+}
+
+/* hamburger menu */
+
+.hamburger-menu::before {
+  position: absolute;
+  content: "";
+  background: white;
+  width: 1.5rem;
+  height: 3px;
+  border-radius: 20px;
+  bottom: 6px;
+  transition: all 0.3s ease;
+}
+
+.hamburger-menu {
+  display: none;
+  background: white;
+  width: 24px;
+  height: 3px;
+  border-radius: 20px;
+  position: relative;
+  transition: all 0.3s ease;
+}
+
+.hamburger-menu::after {
+  position: absolute;
+  content: "";
+  background: white;
+  width: 1.5rem;
+  height: 3px;
+  border-radius: 20px;
+  top: 6px;
+  transition: all 0.3s ease;
+}
+
+.cross-menu::before {
+  bottom: 0px;
+  transform: rotate(45deg);
+  transition: all 0.3s ease;
+}
+
+.cross-menu {
+  background: transparent;
+}
+
+.cross-menu::after {
+  transition: all 0.3s ease;
+  top: 0px;
+  transform: rotate(-45deg);
+}
+
+.buttoncontainer {
+  display: none;
+}
+
+@media (max-width: 500px) {
+
+
+/* body */
+
+.hide-scroll{
+  overflow: hidden;
+}
+
+
+  .nav-right {
+    display: none;
+  }
+
+  .nav-container {
+    margin: 0 30px;
+  }
+
+  .nav-container > img {
+    width: 6rem;
+  }
+
+  .buttoncontainer {
+    display: block;
+    height: 2rem;
+    width: 2rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .hamburger-menu {
+    display: block;
+  }
+
+
+/* side brmenu */
+
+
+.close{
+  display: block;
+}
+
+.nav-right{
+  position: absolute;
+  height: 100vh;
+  top: 85px;
+  left: 0;
+  background-color: #7030cc;
+width: 100%;
+}
+
+.nav-right ul {
+  flex-direction: column;
+  align-items: center;
+  gap: 3rem;
+  width: 100%;
+  margin:  3rem 0;
+}
+
+.nav-right > button{
+  position: relative;
+  left: 50%;
+  transform: translate(-50%, 0);
+}
+
+
+  /* section-one */
+
+  .container1 {
+    padding-top: 0;
+    height: 100vh;
+  }
+
+  .section-one-content {
+    text-align: center;
+  }
+  .section-one-img {
+    display: none;
+  }
+  .section-one-content h1 {
+    font-size: 30px;
+    margin-bottom: 3rem ;
+  }
+  
+
+
+/* section-three" */
+
+.section-three-img{
+height: 26rem;
+}
+
+.section-three-contant> h1{
+  text-align: center;
+  font-size: 26px;
+   
+}
+
+
+
+/* .section-four */
+
+.section-four-head >h2{
+  font-size: 30px;
+  /* margin: 0 rem; */
+
+}
+
+.section-four-box{
+margin: 3rem;
+}
+
 }

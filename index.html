@@ -15,7 +15,7 @@
     <link rel="stylesheet" href="./style.css" />
     <title>HTML-CSS-project-13</title>
   </head>
-  <body>
+  <body class="body">
     <nav>
       <div class="nav-container">
         <img src="./image/white-logo.png" alt="logo" />
@@ -28,6 +28,9 @@
             <li>Blog</li>
           </ul>
           <button>FREE TRIAL</button>
+        </div>
+        <div class="buttoncontainer">
+          <div class="hamburger-menu"></div>
         </div>
       </div>
     </nav>
@@ -101,21 +104,25 @@
           </div>
         </div>
         <div class="section-four-box">
-          <div class="two"><img src="./image/data-analytics.svg" alt="data" /></div>
+          <div class="two">
+            <img src="./image/data-analytics.svg" alt="data" />
+          </div>
           <div>
             <h5>Data Analytics</h5>
             <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit.</p>
           </div>
         </div>
         <div class="section-four-box">
-          <div class ="three"><img src="./image/wrong.png" alt="wrong" /></div>
+          <div class="three"><img src="./image/wrong.png" alt="wrong" /></div>
           <div>
             <h5>Fully Secured</h5>
             <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit.</p>
           </div>
         </div>
         <div class="section-four-box">
-          <div class="four"><img src="./image/support 1.png" alt="support" /></div>
+          <div class="four">
+            <img src="./image/support 1.png" alt="support" />
+          </div>
           <div>
             <h5>24/7 Support</h5>
             <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit.</p>
@@ -124,4 +131,21 @@
       </div>
     </div>
   </body>
+
+
+  <script>
+    // const herocontainer = document.querySelector(".hero-container")
+    const body = document.querySelector(".body")
+    const sidebarMenu = document.querySelector(".nav-right")
+    const buttoncontainer =document.querySelector(".buttoncontainer")
+    const burgermenu = document.querySelector(".hamburger-menu")
+    buttoncontainer.addEventListener('click' , (e)=>{
+      burgermenu.classList.toggle("cross-menu")
+      sidebarMenu.classList.toggle("close")
+      body.classList.toggle("hide-scroll")
+      // herocontainer.classList.toggle("shadow")
+  
+    })
+  </script>
+
 </html>
